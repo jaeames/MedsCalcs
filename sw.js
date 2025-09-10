@@ -1,5 +1,5 @@
 // Very small offline cache. You can expand this later.
-const CACHE = "meds-calc-v1";
+const CACHE = "meds-calc-v2";
 const ASSETS = [
   "./",
   "./index.html",
@@ -32,4 +32,5 @@ self.addEventListener("fetch", (event) => {
     )
   );
 });
+
 
