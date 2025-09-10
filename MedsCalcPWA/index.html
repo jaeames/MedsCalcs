@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meds Calc Practice</title>
+
+  <!-- PWA manifest -->
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0b5fff" />
+
+  <!-- iOS install niceties (does not hurt Android) -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Meds Calc Practice</h1>
+    <p>This is the starter page of your PWA. You can add calculators and content here later.</p>
+
+    <section class="card">
+      <h2>Quick demo card</h2>
+      <p>Make a small visual change so you know publishing works.</p>
+    </section>
+
+    <p class="hint">
+      On Android (Chrome): menu → <strong>Install app</strong> to add this to your Home screen.
+    </p>
+  </main>
+
+  <script>
+    // Register the service worker (required for install + offline when hosted over HTTPS)
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./sw.js").catch(console.error);
+      });
+    }
+  </script>
+</body>
+</html>
