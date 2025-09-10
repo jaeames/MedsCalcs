@@ -6,7 +6,11 @@ const ASSETS = [
   "./styles.css",
   "./manifest.webmanifest",
   "./icons/icon-192.png",
-  "./icons/icon-512.png"
+  "./icons/icon-512.png",
+  "./question.html",
+  "./feedback.html",
+  "./js/app.js",
+  "./data/bodyweight.json"
 ];
 
 self.addEventListener("install", (event) => {
@@ -28,3 +32,4 @@ self.addEventListener("fetch", (event) => {
     )
   );
 });
+
