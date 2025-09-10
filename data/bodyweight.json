@@ -2,29 +2,70 @@
   "topic": "Body weight calculations",
   "questions": [
     {
-      "id": "bw-001",
-      "title": "Dose by weight",
-      "stem": "A child weighs 18 kg. The prescribed dose is 0.15 mg/kg. What is the total dose in mg?",
-      "formula": "Dose (mg) = weight (kg) × mg/kg",
-      "hint": "Multiply the weight by the dose per kg.",
-      "correct_working": "18 kg × 0.15 mg/kg = 2.7 mg",
-      "answer": 2.7,
-      "units": "mg",
-      "tolerance": 0.01,
-      "rounding": "1 decimal place acceptable",
-      "explanation": "SafeMedicate-style: accept 2.7 mg; 2.70 is also fine."
+      "id": "bw-101",
+      "title": "Dose by weight – paediatric",
+      "stem": "The prescriber has ordered the following drug.",
+      "patient": {
+        "name": "Sam Taylor",
+        "sex": "Male",
+        "age": "7 years",
+        "height": "120 cm",
+        "weight": "22 kg",
+        "diagnosis": "Asthma",
+        "allergies": "Nil known"
+      },
+      "monograph": {
+        "medication": "Salbutamol Oral Solution",
+        "indication": "Asthma management",
+        "route": "Oral",
+        "dose_calc": "0.15 mg/kg every 8 hours",
+        "max_dose": "10 mg every 8 hours",
+        "dispensed_dose": "2 mg per 5 mL"
+      },
+      "rounding": "Round liquid doses to 1 decimal place.",
+      "equation": {
+        "slots": ["number", "unit", "operator", "number", "unit"],
+        "valid_units": ["mg", "kg", "mg/kg", "mL"],
+        "valid_ops": ["×", "÷"],
+        "answer": 3.3,
+        "units": "mg",
+        "tolerance": 0.1
+      },
+      "correct_working": "22 kg × 0.15 mg/kg = 3.3 mg",
+      "explanation": "Multiply weight by the dose per kg to get the required dose."
     },
     {
-      "id": "bw-002",
-      "title": "Dose by weight (adult)",
-      "stem": "An adult weighs 72 kg. The prescription is 1.2 mg/kg. Calculate the total dose in mg.",
-      "formula": "Dose (mg) = weight (kg) × mg/kg",
-      "correct_working": "72 kg × 1.2 mg/kg = 86.4 mg",
-      "answer": 86.4,
-      "units": "mg",
-      "tolerance": 0.05,
-      "rounding": "1 decimal place acceptable",
-      "explanation": ""
+      "id": "bw-102",
+      "title": "Dose by weight – adult",
+      "stem": "The prescriber has ordered the following drug.",
+      "patient": {
+        "name": "Aisha Khan",
+        "sex": "Female",
+        "age": "35 years",
+        "height": "165 cm",
+        "weight": "60 kg",
+        "diagnosis": "Severe bacterial infection",
+        "allergies": "Penicillin"
+      },
+      "monograph": {
+        "medication": "Gentamicin Injection",
+        "indication": "Severe bacterial infection",
+        "route": "Intravenous",
+        "dose_calc": "5 mg/kg once daily",
+        "max_dose": "480 mg per day",
+        "dispensed_dose": "40 mg per mL"
+      },
+      "rounding": "Round injection volumes to the nearest 0.1 mL.",
+      "equation": {
+        "slots": ["number", "unit", "operator", "number", "unit"],
+        "valid_units": ["mg", "kg", "mg/kg", "mL"],
+        "valid_ops": ["×", "÷"],
+        "answer": 300,
+        "units": "mg",
+        "tolerance": 1
+      },
+      "correct_working": "60 kg × 5 mg/kg = 300 mg",
+      "explanation": "Multiply the patient’s weight by the prescribed mg/kg dose."
     }
   ]
 }
