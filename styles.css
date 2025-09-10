@@ -9,3 +9,23 @@ h1 { margin-top: 8px; color: var(--brand); }
   box-shadow: 0 2px 10px rgba(0,0,0,0.07);
 }
 .hint { font-size: 0.95rem; opacity: 0.8; }
+.grid-2 { display:grid; gap:16px; grid-template-columns: 1fr; }
+@media (min-width: 800px){ .grid-2 { grid-template-columns: 1fr 1fr; } }
+
+.h2-tight { margin: 6px 0 8px; }
+
+.banner { margin:12px 0; padding:12px; background:#fff9e6; border-left:4px solid #e6b800; }
+
+.eqframe {
+  display:flex; flex-wrap:wrap; gap:8px; align-items:center;
+  background:#fde9d9; padding:12px; border-radius:10px; border:1px solid #f2cdaa;
+}
+.eqnum { width:90px; padding:6px; }
+.equnit, .eqop { padding:6px; }
+.eqeq { font-weight:bold; padding:0 6px; }
+.actions { display:flex; gap:8px; margin-top:12px; }
+.units {
+  padding:6px 10px; border:1px solid #ddd; border-radius:8px; background:#fafafa;
+}
+#patient-card dt, #monograph-card dt { font-weight:bold; }
+#patient-card dd, #monograph-card dd { margin:0 0 6px; }
