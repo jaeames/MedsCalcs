@@ -17,27 +17,28 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="container">
+    <main class="container">
     <h1>Meds Calc Practice</h1>
-    <p>This is the starter page of your PWA. You can add calculators and content here later.</p>
+    <p>Select a topic to practice.</p>
 
     <section class="card">
-      <h2>Quick demo card</h2>
-      <p>Make a small visual change so you know publishing works.</p>
+        <h2>Topics</h2>
+        <ul>
+        <li><a href="./question.html?topic=bodyweight&idx=0">Body weight calculations</a></li>
+        <!-- Add more topics later -->
+        </ul>
     </section>
-
-    <p class="hint">
-      On Android (Chrome): menu → <strong>Install app</strong> to add this to your Home screen.
-    </p>
-  </main>
-
-  <script>
-    // Register the service worker (required for install + offline when hosted over HTTPS)
+    <p class="hint">This is a prototype. Answers accept numbers only for now.</p>
+    </main>
+    <script>
     if ("serviceWorker" in navigator) {
-      window.addEventListener("load", () => {
+        window.addEventListener("load", () => {
         navigator.serviceWorker.register("./sw.js").catch(console.error);
-      });
+        });
     }
-  </script>
+    </script>
 </body>
 </html>
+</body>
+</html>
+
