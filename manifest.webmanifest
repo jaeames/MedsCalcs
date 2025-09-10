@@ -1,7 +1,8 @@
 {
   "name": "Meds Calc Practice",
   "short_name": "MedsCalc",
-  "start_url": "/",
+  "start_url": "/MedsCalcs/",
+  "scope": "/MedsCalcs/",
   "display": "standalone",
   "background_color": "#f6f8ff",
   "theme_color": "#0b5fff",
@@ -10,3 +11,4 @@
     { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
   ]
 }
+
