@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Question • Meds Calc</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="container">
+    <a href="./index.html">← Back to menu</a>
+    <h1>Question</h1>
+
+    <div id="q-stem" class="card"></div>
+
+    <details>
+      <summary>💡 Hint / Tutorial</summary>
+      <div id="q-hint" style="margin-top:8px;"></div>
+    </details>
+
+    <form id="answer-form" class="card">
+      <label for="working">Your working (optional)</label>
+      <textarea id="working" rows="4" style="width:100%;" placeholder="Show your steps here"></textarea>
+
+      <label for="answer" style="margin-top:12px;">Final answer</label>
+      <input id="answer" type="number" step="any" inputmode="decimal" style="width:100%;" placeholder="Enter number only" />
+
+      <button type="submit" style="margin-top:12px;">Submit</button>
+    </form>
+  </main>
+  <script src="./js/app.js"></script>
+  <script>
+    window.MedsCalc.loadQuestionPage();
+  </script>
+</body>
+</html>

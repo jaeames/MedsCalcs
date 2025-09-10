@@ -1,0 +1,30 @@
+{
+  "topic": "Body weight calculations",
+  "questions": [
+    {
+      "id": "bw-001",
+      "title": "Dose by weight",
+      "stem": "A child weighs 18 kg. The prescribed dose is 0.15 mg/kg. What is the total dose in mg?",
+      "formula": "Dose (mg) = weight (kg) × mg/kg",
+      "hint": "Multiply the weight by the dose per kg.",
+      "correct_working": "18 kg × 0.15 mg/kg = 2.7 mg",
+      "answer": 2.7,
+      "units": "mg",
+      "tolerance": 0.01,
+      "rounding": "1 decimal place acceptable",
+      "explanation": "SafeMedicate-style: accept 2.7 mg; 2.70 is also fine."
+    },
+    {
+      "id": "bw-002",
+      "title": "Dose by weight (adult)",
+      "stem": "An adult weighs 72 kg. The prescription is 1.2 mg/kg. Calculate the total dose in mg.",
+      "formula": "Dose (mg) = weight (kg) × mg/kg",
+      "correct_working": "72 kg × 1.2 mg/kg = 86.4 mg",
+      "answer": 86.4,
+      "units": "mg",
+      "tolerance": 0.05,
+      "rounding": "1 decimal place acceptable",
+      "explanation": ""
+    }
+  ]
+}
